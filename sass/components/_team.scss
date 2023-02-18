@@ -1,0 +1,114 @@
+.team {
+    background-color: $bg-grey-color;
+  }
+  
+  .team__lists {
+    display: flex;
+    gap: 30px;
+    display: block;
+    @media screen and (min-width: $laptop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+    flex-wrap: unset;
+
+    }
+  }
+
+  
+  .team__item {
+    background-color: $bg-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 30px;
+    }
+  
+  .team__title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    color: inherit;
+    margin-bottom: 50px;
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+      line-height: 1.16;
+      
+    }
+  }
+  
+  .team__subtitle {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    color: inherit;
+    margin-bottom: 10px;
+  }
+  
+  .team__info {
+    padding: 30px 0;
+  }
+  
+  .team__position {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $grey-color;
+    margin-bottom: 16px;
+  }
+  
+  .team__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .team__social-links .button {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 44px;
+    height: 44px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+    transition: color $time $type-transition;
+    transition: background-color $time $type-transition;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: background-color $time $type-transition;
+    -moz-transition: background-color $time $type-transition;
+    -ms-transition: background-color $time $type-transition;
+    -o-transition: background-color $time $type-transition;
+}
+  
+  .team__social-links .button-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .team__social-links .button:hover,
+  .team__social-links .button:focus {
+  
+    background-color: $blue-color;
+    fill: #fff;
+    cursor: pointer;
+  }
+  

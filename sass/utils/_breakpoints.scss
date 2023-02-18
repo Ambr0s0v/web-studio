@@ -1,0 +1,12 @@
+.container{
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media screen and (min-width: $laptop){
+        max-width:768px;
+    }
+    @media screen and (min-width: $desktop){
+        max-width:1200px;
+    }
+}
+

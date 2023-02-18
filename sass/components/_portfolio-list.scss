@@ -1,0 +1,84 @@
+.portfolio__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $black-color;
+}
+
+.portfolio__text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $grey-color;
+}
+
+.portfolio__info {
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 20px 24px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio__link {
+  display: block;
+  &:hover,&:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: background-color $time $type-transition;
+  -webkit-transition: background-color $time $type-transition;
+  -moz-transition: background-color $time $type-transition;
+  -ms-transition: background-color $time $type-transition;
+  -o-transition: background-color $time $type-transition;
+  transition: color $time $type-transition;
+  transition: transform var(--time) var(--type-transition);
+}
+
+.portfolio__link:hover .portfolio__overlay,
+.portfolio__link:focus .portfolio__overlay {
+  transform: translateY(0);
+  transition: transform $time $type-transition;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  -webkit-transition: transform $time $type-transition;
+  -moz-transition: transform $time $type-transition;
+  -ms-transition: transform $time $type-transition;
+  -o-transition: transform $time $type-transition;
+}
+
+.portfolio__overlay-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}

@@ -1,0 +1,290 @@
+.footer {
+    padding: 60px 0;
+    background-color: $bg-black-color;
+  }
+  .footer .container{
+    display: block;
+    @media screen and (min-width: $laptop){
+      align-items: unset;
+    }
+    @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+    
+    }
+  }
+  .footer__logo-link {
+    color: $white-color;
+  }
+
+  .footer__laptop{
+    display: block;
+    @media screen and (min-width: $laptop){
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    
+    
+  }
+  
+  .footer__social-info{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $laptop){
+      display: inline-block;
+      margin-right: 75px;
+    }
+
+  }
+  
+  .footer__lists {
+    margin-top: 20px;
+  }
+  
+  .footer__place {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    transition: color $time $type-transition;
+    -webkit-transition: color $time $type-transition;
+    -moz-transition: color $time $type-transition;
+    -ms-transition: color $time $type-transition;
+    -o-transition: color $time $type-transition;
+    font-size: 14px;
+    line-height: 1.71;
+    &:hover,&:focus{
+      color: $blue-color;
+    }
+    
+  }
+  
+  .footer__link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color $time $type-transition;
+    -webkit-transition: color $time $type-transition;
+    -moz-transition: color $time $type-transition;
+    -ms-transition: color $time $type-transition;
+    -o-transition: color $time $type-transition;
+    &:hover,&:focus{
+      color: $blue-color;
+    }
+  }
+  
+  .footer__item {
+    margin-bottom: 9px;
+  }
+  
+  .footer__social-lists {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+
+  }
+  
+  .footer__social-lists li:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footer__info {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: $laptop){
+      display: inline-block;
+      margin-left: 75px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-bottom: 0;
+      margin-left: unset;
+    }
+  }
+  
+  .footer__social-info {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+      margin-left: 70px;
+      margin-bottom: 0;
+
+
+    }
+  }
+  
+  .footer__social-title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16px / 14px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  
+    margin-bottom: 20px;
+  }
+  
+  .footer__social-lists .button {
+    background: none;
+    padding: 0;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    background-color: #44454e;
+    border-radius: 50%;
+    transition: color $time $type-transition;
+    transition: background-color $time $type-transition;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: background-color $time $type-transition;
+    -moz-transition: background-color $time $type-transition;
+    -ms-transition: background-color $time $type-transition;
+    -o-transition: background-color $time $type-transition;
+    &:hover,&:focus{
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: $blue-color;
+      fill: #fff;
+      cursor: pointer;
+    }
+  }
+  
+  .footer__social-lists .button-icon {
+    padding: 0;
+    border: none;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+  
+  .footer__form{
+    display: block;
+    text-align: center;
+    @media screen and (min-width: $laptop) {
+      text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      margin-left: auto;
+      gap: 12px;
+    }
+  }
+  
+  .footer__form-filed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+
+  }
+  
+  .footer-mail{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  
+  }
+  
+  .footer__input{
+    width: 450px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+  }
+  
+  .footer__form-submit{
+    margin-top: 37px;
+    
+    background-color: $blue-color;
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    padding:10px 64px 10px 31px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    transition: background-color $time $type-transition;
+    -webkit-transition: background-color $time $type-transition;
+    -moz-transition: background-color $time $type-transition;
+    -ms-transition: background-color $time $type-transition;
+    -o-transition: background-color $time $type-transition;
+    transition: color $time $type-transition;
+    &:hover,&:focus{
+      background-color: #188ce8;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      padding: 10px 62px 10px 28px;
+    }
+  }
+  
+  .footer__form-submit::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    background-image: url("../images/icon_send.png");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+  }

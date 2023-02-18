@@ -1,0 +1,79 @@
+.details__text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $grey-color;
+  text-align: left;
+  @media screen and (min-width: $desktop) {
+    
+  }
+}
+
+.details__lists {
+  margin-bottom: 30px;
+  text-align: center;
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: unset;
+    gap: 30px;
+  }
+ 
+}
+
+.details__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $laptop) {
+    max-width: 354px;
+  }
+}
+
+.details__item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: $bg-grey-color;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon--antena::before {
+  background-image: url("../images/antenna.svg");
+}
+
+.icon--clock::before {
+  background-image: url("../images/clock.svg");
+}
+
+.icon--diagramm::before {
+  background-image: url("../images/diagram.svg");
+}
+
+.icon--austronavt::before {
+  background-image: url("../images/astronaut.svg");
+}
+
+.details__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: inherit;
+  margin-bottom: 10px;
+  @media screen and (min-width: $desktop) {  
+      text-align: center;
+  }
+}

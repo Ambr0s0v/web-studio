@@ -1,0 +1,18 @@
+@media screen and (min-width: 480px) {
+  .mobile-modal {
+    width: 480px;
+    height: 796px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
+  }
+  .mobile__nav-item {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}/*# sourceMappingURL=mobile__modal.css.map */
